@@ -37,7 +37,8 @@ public class nuevo extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet nuevo</title>");            
-            out.println(nombre);  
+            out.println(nombre); 
+            out.println("<br>");
             out.println(rut); 
             out.println("</head>");
             out.println("<body>");
