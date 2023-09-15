@@ -32,11 +32,13 @@ public class nuevo extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             String nombre = request.getParameter("nombre");
+            String rut = request.getParameter("rut");
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet nuevo</title>");            
             out.println(nombre);  
+            out.println(rut); 
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet nuevo at " + request.getContextPath() + "</h1>");
